@@ -1,12 +1,15 @@
 'use client';
 
 import {
-    Atom,
     Book,
     BookCheck,
     BookHeart,
     BookImage,
     LayoutDashboard,
+    PhoneCall,
+    Radar,
+    Server,
+    TestTube2,
 } from 'lucide-react';
 import * as React from 'react';
 
@@ -26,9 +29,9 @@ import { usePage } from '@inertiajs/react';
 const data = {
     projects: [
         {
-            logo: Atom,
-            title: 'Starter',
-            subtitle: 'React - Inertia - Laravel',
+            logo: PhoneCall,
+            title: 'IVR Testing Platform',
+            subtitle: 'Regression · Discovery',
         },
     ],
     navMain: [
@@ -36,6 +39,21 @@ const data = {
             title: 'Dashboard',
             url: '/dashboard',
             icon: LayoutDashboard,
+        },
+        {
+            title: 'IVR Platform',
+            url: '/dashboard',
+            icon: Server,
+        },
+        {
+            title: 'Regression Tests',
+            url: '/dashboard',
+            icon: TestTube2,
+        },
+        {
+            title: 'Discovery Scans',
+            url: '/dashboard',
+            icon: Radar,
         },
     ],
     navSecondary: [
